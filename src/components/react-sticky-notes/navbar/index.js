@@ -4,11 +4,10 @@ import {
   ButtonAdd,
   ButtonTitle,
   ButtonMenu,
-  ButtonTrash,
   ButtonPageView,
 } from "./../buttons";
 function NavBar({ viewSize, prefix, items, callbacks, icons }) {
-  const buttons = [ButtonTitle, ButtonTrash];
+  const buttons = [ButtonTitle];
   if (viewSize === "pageview" || viewSize === "fullscreen") {
     buttons.splice(1, 0, ButtonMenu);
   }
@@ -50,7 +49,7 @@ function NavBar({ viewSize, prefix, items, callbacks, icons }) {
           viewSize: viewSize,
           icons,
           callbacks,
-          buttons: [ButtonAdd, ButtonPageView, ButtonTrash],
+          buttons: [ButtonAdd, ButtonPageView],
         })
       ),
     ]

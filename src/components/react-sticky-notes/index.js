@@ -125,22 +125,16 @@ class ReactStickyNotes extends Component {
   render() {
     const { items, viewSize, modal } = this.state;
     let View = null;
-    if (modal) {
-      switch (modal) {
-        case "upload":
-          View = UploadModal;
-          break;
-      }
-    } else {
-      switch (viewSize) {
-        case "pageview":
-          View = PageView;
-          break;
-        default:
-          View = NormalView;
-          break;
-      }
+
+    switch (viewSize) {
+      case "pageview":
+        View = PageView;
+        break;
+      default:
+        View = NormalView;
+        break;
     }
+
     return h(View, {
       ...this.props,
       items,
