@@ -30,3 +30,8 @@ export const pageview = h(
   { className: iconsClassName, style: getElementStyle("icon") },
   "fullscreen"
 );
+export const trash = h(
+  "i",
+  { className: iconsClassName, style: getElementStyle("icon") },
+  "delete_outlined"
+);
