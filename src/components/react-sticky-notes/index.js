@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import reducer from "./reducers/reducer";
 import * as icons from "./icons";
 import { h, getColorCodes, getNotes, getUUID } from "./utils";
-import { NormalView, BubbleView, PageView, FullscreenView } from "./views";
-import { UploadModal } from "./modals";
+import { NormalView, PageView } from "./views";
 class ReactStickyNotes extends Component {
   static defaultProps = {
     useCSS: true,
