@@ -11,7 +11,6 @@ function App() {
             </header>
             <div className="app-body">
                 <ReactStickyNotes
-                    backgroundColor="#fefefe"
                     useCSS={true}
                     containerHeight={"400px"}
                 />
